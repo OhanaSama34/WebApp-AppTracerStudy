@@ -1,0 +1,491 @@
+:root {
+    ---pr-color: #ffdd00;
+    ---pr-color-1: rgb(13, 110, 253);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f6f8;
+}
+
+.navbar {
+    z-index: 3;
+    height: 60px;
+    background-color: #007BFF;
+   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);*/
+}
+
+* {
+    z-index: 2;
+}
+
+.accsent-img {
+    z-index: 1;
+}
+/*
+.nav-color {
+    background-color: blue;
+    transition: all ease-in-out 0.3s;
+}
+
+.bg-transparent{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all ease-in 0.3s;
+}*/
+/*
+.navbar-brand{
+    font-weight: 700;  
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+.button-secundary {
+    width: 133px;
+    height: 40px;
+    background-color: white;
+    color: var(---pr-color-1);
+    border: none;
+    font-size: 16px;
+    font-weight:700 ;
+}
+
+.button-primary {
+    width: 133px;
+    height: 40px;
+    background-color:transparent;
+    color : #fff;
+    border: none;
+    font-size: 16px;
+    font-weight:400 ;
+}*/
+
+.navbar a {
+    color: #fff ;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #000 ;
+}
+
+.navbar .button-secundary {
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    width: 110px;
+    height: 40px;
+}
+
+.navbar .button-secundary:hover {
+    background-color: #fff;
+    color: #007BFF;
+}
+/* hero section */
+
+.img-hero {
+    height: 100vh;
+    width: auto;
+    z-index: 2;
+    margin-top: 37px;
+    margin-left: -3%;
+}
+
+#hero {
+    color: #000;
+    padding: 100px 0;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.hero-tagline span {
+    color: #0074E4; /* Ubah warna teks menjadi biru (contoh: #0074E4) */
+}
+
+.hero-tagline h1 {
+    color: #000 !important;
+    font-weight: 700;
+    font-size: 50px ;
+    line-height: 70px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan teks */
+}
+
+.hero-tagline p {
+    font-size: 20px ;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.benefit, .mage, .trace {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.benefit.animated-fade, .mage.animated-fade, .trace.animated-fade {
+    opacity: 1;
+}
+
+/*about section*/
+.about {
+    display: inline-flex; 
+    height: 500px ;
+}
+
+
+.benefi {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.benefi.animated {
+    opacity: 1;
+    transform: translateY(0);
+    animation: floatUp 1.5s ease-in-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.benefit {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.benefit.animated {
+    opacity: 1;
+    transform: translateY(0);
+    animation: floatUp 1.5s ease-in-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.trace {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.trace.animated {
+    opacity: 1;
+    transform: translateX(0);
+    animation: floatLeft 1s ease-in-out forwards;
+}
+
+@keyframes floatLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mage {
+    opacity: 1;
+    transform: translateX(-60px);
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.mage.animated {
+    opacity: 0;
+    transform: translateX(0);
+    animation: floatRight 1s ease-out forwards;
+}
+
+@keyframes floatRight {
+    0% {
+        opacity: 1;
+        transform: translateX(-60px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+.trace {
+    margin-top: 20vh;
+    margin-left: 6%;
+}
+
+.trace span {
+    color: var(---pr-color-1);
+}
+
+
+.img-trace {
+    height: 65%;
+    z-index: 1;
+    margin-right: 5% !important;
+    margin-top: 30px;
+    align-items: center;
+}
+
+/* style.css */
+.benefits-container {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+
+.benefit {
+    flex-basis: calc(33.33% - 20px);
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.benefit h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.benefit p {
+    font-size: 16px;
+}
+
+.ben {
+margin-top: 80px;
+margin-bottom: 30px;
+}
+
+.ben span{
+    color: var(---pr-color-1);
+    margin-bottom: 25px;
+}
+
+/* faq section */
+.faq-heading {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.faq-heading span {
+    color: var(---pr-color-1);
+}
+
+.accordion-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    padding: 9px 18px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #e2e2e2;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #f5f5f5;
+}
+
+.accordion-body {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+/*contact section*/
+
+#contact {
+    margin-top: 40px;
+    background-size: cover;
+}
+
+#contact .overlay{
+    /*background: rgba(0 ,0 ,0 , 0.5);*/
+}
+
+#contact .container{
+    padding: 148px 0 148px 0;
+}
+
+#contact h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #007BFF;
+    width: 441px;
+}
+
+.kontak h6{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+    margin: 19px 0 14px 0;
+}
+.kontak p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+    display: inline-block;
+    margin: 19px 0 14px 0;
+}
+
+.kontak a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000;
+    text-decoration: none;
+    width: 332px;
+    display: inline-block;
+}
+
+
+.card-contact {
+    width: 100%;
+    height: 445px;
+    background: #fff;
+    border-radius: 15px ;
+    padding: 52px 48px;
+    border: #f6f6f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-contact h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: var(---pr-color-1);
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.form-control {
+    background: #C4C4C4;
+    height: 75px !important;
+    border-radius: 0;
+}
+
+.form-floating label{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height:18px;
+    color:#000;
+
+}
+
+.button-kontak {
+    width: 100%;
+    height: 75px;
+    background:var(---pr-color-1);
+    border: none;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+
+footer {
+    width:100%;
+    height: 230px;
+    background: var(---pr-color-1);
+}
+
+footer a{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px; 
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.copyright{
+    bottom: 1%;
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height:21px;
+    font-family: 'poppins';
+    margin-bottom: -20px;
+}
+
+.icon-kontak {
+    display: flex;
+    align-items: center;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s, opacity 0.3s; 
+    opacity:1;
+}
+
+
+
+/* Ini adalah contoh gaya untuk teks kontak */
+
+.icon-footer {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+}
+
+
+.contact-info p {
+    margin: 0; /* Menghilangkan margin bawaan dari <p> */
+}
